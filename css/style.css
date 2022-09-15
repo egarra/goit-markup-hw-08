@@ -135,6 +135,7 @@ a {
 }
 
 .features-list li p {
+    margin-top: 10px;
     font-weight: 400;
     color: #757575;
     line-height: 171%;
@@ -263,6 +264,10 @@ footer p {
 
 .contacts-footer li a {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts-footer li a:hover {
+    color: #2196F3;
 }
 
 .logo {
