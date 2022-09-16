@@ -4,12 +4,25 @@
     padding: 0;
 }
 
+:root {
+    --white-color: #FFFFFF;
+    --black-color: #212121;
+    --brand-color: #2196F3;
+    --grey-color: #757575;
+    --dark-grey-color: #2F303A;
+    --snow-color: #F5F4FA;
+    --footer-color: #2F303A;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    color: #FFFFFF;
+    color: var(--white-color);
+    letter-spacing: 0.03em;
+    font-size: 14px;
 }
 
 a {
+    color: var(--black-color);
     text-decoration: none;
 }
 
@@ -17,11 +30,10 @@ a {
     position: absolute;
     left: 403px;
     top: 32px;
-    font-size: 14px;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
+    color: var(--black-color);
 }
 
 .main-menu-list li {
@@ -29,13 +41,14 @@ a {
     margin: 0 32px;
 }
 
-.main-menu-list li a {
-    color: #212121;
+.current {
+    color: var(--brand-color);
 }
 
 .main-menu-list li a:hover {
-    color: #2196F3;
+    color: var(--brand-color);
 }
+
 
 .header-logo {
     position: absolute;
@@ -44,7 +57,7 @@ a {
 }
 
 .header-logo span {
-    color: #000000;
+    color: var(--black-color);
 }
 
 .contacts {
@@ -58,53 +71,51 @@ a {
 }
 
 .contacts li a {
-    color: #757575;
+    color: var(--grey-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
 .contacts li a:hover {
-    color: #2196F3;
+    color: var(--brand-color);
 }
 
 .decisions {
-    position: absolute;
+    margin-top: 80px;
     width: 1600px;
     height: 600px;
-    background: #2F303A;
-    margin-top: 80px;
+    background: var(--dark-grey-color);
 }
 
 .decisions h1 {
-    position: absolute;
-    left: 452px;
-    top: 200px;
+    margin-left: 492px;
+    margin-top: 200px;
+    display: inline-block;
     font-style: normal;
     font-weight: 700;
     font-size: 44px;
-    line-height: 136%;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
 .header-btn {
+    margin-left: 692px;
+    margin-top: 30px;
+    display: block;
     font-family: 'Roboto', sans-serif;
-    position: absolute;
     width: 216px;
     height: 50px;
-    left: 660px;
-    top: 350px;
     border: none;
-    background: #2196F3;
+    background: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    color: #FFFFFF;
+    color: var(--white-color);
     font-weight: 700;
     font-size: 16px;
-    line-height: 188%;
+    line-height: 1.875;
     letter-spacing: 0.06em;
 }
 
@@ -118,50 +129,43 @@ a {
 }
 
 .features-list {
+    margin-top: 694px;
+    margin-left: 215px;
     display: flex;
     justify-content: space-between;
     width: 1170px;
     height: 98px;
-    position: absolute;
-    color: #212121;
-    left: 215px;
-    top: 774px;
+    color: var(--black-color);
     list-style-type: none;
 }
 
 .features-list li {
     width: 270px;
-    font-size: 14px;
 }
 
 .features-list li p {
     margin-top: 10px;
     font-weight: 400;
-    color: #757575;
-    line-height: 171%;
-    letter-spacing: 0.03em;
+    color: var(--grey-color);;
+    line-height: 1.7;
 }
 
 .actions h2 {
-    position: absolute;
+    margin-top: 94px;
     height: 42px;
-    left: 617px;
-    top: 966px;
     font-style: normal;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--black-color);
 }
 
 .pictures-list {
-    position: absolute;
+    margin-top: 50px;
+    margin-left: 215px;
     display: flex;
     justify-content: space-between;
     width: 1170px;
-    top: 1058px;
-    left: 215px;
 }
 
 .pictures-list li img {
@@ -175,38 +179,35 @@ a {
 }
 
 .team {
-    position: absolute;
     width: 1600px;
     height: 648px;
-    left: 0px;
-    top: 1446px;
-    background: #F5F4FA;
+    background: var(--snow-color);
+    margin-top: 94px;
 }
 
 .team h2 {
+    display: inline-block;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
     margin-top: 94px;
-    color: #212121;
-    left: 668px;
-    top: 1540px;
+    color: var(--black-color);
+    margin-top: 94px;
+    margin-left: 668px;
 }
 
 .team-cards {
-    position: absolute;
     display: flex;
     justify-content: space-between;
     width: 1170px;
-    left: 215px;
     margin-top: 50px;
+    margin-left: 215px;
 }
 
 .team-cards li {
-    background: #FFFFFF;
+    background: var(--white-color);
     font-size: 16px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -215,44 +216,35 @@ a {
 }
 
 .team-cards li h3 {
-    color: #212121;
+    color: var(--black-color);;
     text-align: center;
     margin-top: 30px;
 }
 
 .team-cards li p {
-    color: #757575;
+    color: var(--grey-color);;
     font-weight: 400;
-    line-height: 19px;
+    line-height: 1.35;
     text-align: center;
-    letter-spacing: 0.03em;
     margin-top: 10px;
 }
 
 footer {
-    display: flex;
-    position: absolute;
     width: 1600px;
     height: 252px;
-    left: 0px;
-    top: 2094px;
-    background: #2F303A;
+    background: var(--footer-color)
 }
 
 footer p {
-    font-size: 14px;
-    line-height: 171%;
+    line-height: 1.7;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    letter-spacing: 0.03em;
 }
 
 .contacts-footer {
-    font-size: 14px;
-    line-height: 171%;
+    line-height: 1.7;
     font-style: normal;
-    letter-spacing: 0.03em;
     margin-top: 9px;
 }
 
@@ -266,7 +258,7 @@ footer p {
 }
 
 .contacts-footer li a:hover {
-    color: #2196F3;
+    color: var(--brand-color)
 }
 
 .logo {
@@ -274,29 +266,101 @@ footer p {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
+    line-height: 1.19;
     width: 145px;
     height: 31px;
-    color: #2196F3;
+    color: var(--brand-color)
 }
 
 footer a span {
-    color: #FFFFFF;
+    color: var(--white-color)
 }
 
 footer .logo {
+    display: inline-block;
     margin-top: 50px;
     margin-left: 215px;
 }
 
 address {
-    position: absolute;
     width: 231px;
     height: 21px;
-    left: 215px;
-    top: 111px;
+    margin-left: 215px;
+    margin-top: 20px;
 }
+
+/* portfolio */
+
+header {
+    border-bottom: 1px solid #ECECEC;
+    height: 80px;
+}
+
+.portfolio-list {
+    margin-top: 94px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-list li button {
+    margin: 0 8px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    padding: 8px 22px;
+    color: var(--black-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    line-height: 1.625;
+}
+
+.portfolio-list li button:hover {
+    background: var(--brand-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 1170px;
+    margin-left: 215px;
+    margin-top: 56px;
+}
+
+.cards-wrapper li {
+    width: 370px;
+    height: 404px;
+    border: 1px solid #EEEEEE;
+    margin-bottom: 30px;
+}
+
+.cards-wrapper li h2 {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--black-color);
+    letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-left: 24px;
+    line-height: 2;
+}
+
+.cards-wrapper li p {
+    font-size: 16px;
+    color: var(--grey-color);
+    margin-top: 4px;
+    margin-left: 24px;
+    line-height: 1.8;
+}
+
+
+
 
 
 
