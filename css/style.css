@@ -38,6 +38,10 @@ ul {
     padding: 0;
 }
 
+.section {
+    padding: 94px 0;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -159,6 +163,10 @@ ul {
     line-height: 1.7;
 }
 
+.actions {
+    padding-top: 0;
+}
+
 .actions h2 {
     font-style: normal;
     font-size: 36px;
@@ -202,14 +210,31 @@ ul {
     margin-top: 50px;
 }
 
-.team-cards li {
+.team-cards .social {
+    display: flex;
+}
+
+.team-cards .team-cards-item {
+    width: 44px;
+}
+
+.team-cards .social svg {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    padding: 30%;
+}
+
+.team-cards .team-cards-item {
     background: var(--white-color);
     font-size: 16px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     width: 270px;
-    height: 368px;
 }
+
+
 
 .team-cards li h3 {
     color: var(--black-color);;
@@ -226,6 +251,7 @@ ul {
     line-height: 1.35;
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 footer {
@@ -323,7 +349,6 @@ header {
 }
 
 .cards-wrapper li h2 {
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 18px;
     color: var(--black-color);
@@ -332,15 +357,46 @@ header {
 }
 
 .cards-wrapper li p {
-    padding-top: 4px;
+    margin-top: 4px;
     font-size: 16px;
     color: var(--grey-color);
     line-height: 1.8;
-    margin: 0;
 }
 
-.section {
-    padding: 94px 0;
+.clients-list .clients-list-item svg {
+    width: 170px;
+    height: 92px;
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+    box-sizing: border-box;
+}
+
+.clients-list .clients-list-item svg:hover {
+    fill: var(--brand-color);
+    border-color: var(--brand-color);
+}
+
+.clients-list {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.clients h2 {
+    color: var(--black-color);
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.clients-list-item:hover {
+    fill: var(--brand-color);
+    color: var(--brand-color);
+    cursor: pointer;
 }
 
 
