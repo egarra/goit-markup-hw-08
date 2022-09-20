@@ -8,6 +8,7 @@
     --snow-color: #F5F4FA;
     --footer-color: #2F303A;
     --border-cards-color: #EEEEEE;
+    --svg-color: #AFB1B8;
 }
 
 body {
@@ -36,6 +37,10 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+svg {
+    fill: var(--svg-color);
 }
 
 .section {
@@ -212,18 +217,33 @@ ul {
 
 .team-cards .social {
     display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
 }
 
-.team-cards .team-cards-item {
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    height: 44px;
     width: 44px;
 }
 
-.team-cards .social svg {
+.social a:hover {
+    border-radius: 50%;
+    border: 1px solid var(--brand-color);
+    background-color: var(--brand-color);
+}
+
+.social a:hover svg {
+    fill: var(--white-color);
+}
+
+.social svg {
     width: 20px;
     height: 20px;
-    border-radius: 50%;
-    border: 1px solid blue;
-    padding: 30%;
 }
 
 .team-cards .team-cards-item {
@@ -233,8 +253,6 @@ ul {
     border-radius: 0px 0px 4px 4px;
     width: 270px;
 }
-
-
 
 .team-cards li h3 {
     color: var(--black-color);;
@@ -251,7 +269,7 @@ ul {
     line-height: 1.35;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 footer {
@@ -295,13 +313,62 @@ footer a span {
     color: var(--white-color)
 }
 
-footer .logo {
-    display: inline-block;
-}
-
 address {
     margin-top: 20px;
 }
+
+.contacts-footer-block {
+    display: inline-block;
+}
+
+.clients-list .clients-list-item svg {
+    width: 170px;
+    height: 92px;
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+    box-sizing: border-box;
+}
+
+.clients-list .clients-list-item svg:hover {
+    fill: var(--brand-color);
+    border-color: var(--brand-color);
+}
+
+.clients-list {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.clients h2 {
+    color: var(--black-color);
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.clients-list-item:hover {
+    fill: var(--brand-color);
+    color: var(--brand-color);
+    cursor: pointer;
+}
+
+.social-footer {
+    display: flex;
+}
+
+.subscribe {
+    display: inline-block;
+    
+}
+
+.subscribe h3 {
+}
+
 /* portfolio */
 
 header {
@@ -363,41 +430,7 @@ header {
     line-height: 1.8;
 }
 
-.clients-list .clients-list-item svg {
-    width: 170px;
-    height: 92px;
-    fill: #AFB1B8;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    padding: 16px 32px;
-    box-sizing: border-box;
-}
 
-.clients-list .clients-list-item svg:hover {
-    fill: var(--brand-color);
-    border-color: var(--brand-color);
-}
-
-.clients-list {
-    display: flex;
-    margin-top: 50px;
-    gap: 30px;
-}
-
-.clients h2 {
-    color: var(--black-color);
-    font-size: 36px;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.16;
-    text-align: center;
-}
-
-.clients-list-item:hover {
-    fill: var(--brand-color);
-    color: var(--brand-color);
-    cursor: pointer;
-}
 
 
 
