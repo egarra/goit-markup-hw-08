@@ -41,10 +41,6 @@ ul {
     padding: 0;
 }
 
-svg {
-    fill: var(--svg-color);
-}
-
 .section {
     padding: 94px 0;
 }
@@ -59,6 +55,8 @@ svg {
     display: flex;
     align-items: center;
 }
+
+/* header */
 
 .main-menu-list {
     margin-left: 93px;
@@ -82,10 +80,6 @@ svg {
     color: var(--brand-color);
 }
 
-.main-menu-list li a:hover {
-    color: var(--brand-color);
-}
-
 .header-logo span {
     color: var(--black-color);
 }
@@ -96,8 +90,19 @@ svg {
 }
 .contacts li {
     display: flex;
-    align-items: center;
     margin: 0 32px;
+}
+
+.icon-envelope {
+    fill: currentColor;
+    width: 16px; 
+    height: 12px;
+}
+
+.icon-phone {
+    fill: currentColor;
+    width: 10px;
+    height: 16px;
 }
 
 .contacts li svg {
@@ -105,22 +110,20 @@ svg {
 }
 
 .contacts li a {
+    color: var(--svg-color);
+    display: flex;
+    align-items: center;
     color: var(--grey-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-.contacts li:hover a {
-    color: var(--brand-color);
-}
-
-.contacts li:hover svg {
-    fill: var(--brand-color);
-    cursor: pointer;
-}
+/* main-head-block */
 
 .decisions {
+    margin: 0 auto;
+    min-width: 1200px;
     max-width: 1600px;
     padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) , rgba(47, 48, 58, 0.4)), url("../img/Img.jpg");
@@ -156,10 +159,6 @@ svg {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
-}
-
-.header-btn:hover {
-    cursor: pointer;
 }
 
 .features-list {
@@ -249,29 +248,19 @@ svg {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 30px;
 }
 
 .social a {
+    color: var(--svg-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--white-color);
     height: 44px;
     width: 44px;
 }
 
-.social a:hover {
-    border-radius: 50%;
-    border: 1px solid var(--brand-color);
-    background-color: var(--brand-color);
-}
-
-.social a:hover svg {
-    fill: var(--white-color);
-}
-
-.social svg {
+.social-icon {
+    fill: currentColor;
     width: 20px;
     height: 20px;
 }
@@ -284,10 +273,13 @@ svg {
     width: 270px;
 }
 
+.team-cards-info {
+    padding: 30px 0;
+}
+
 .team-cards li h3 {
     color: var(--black-color);;
     text-align: center;
-    margin-top: 30px;
     font-weight: 500;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -302,7 +294,12 @@ svg {
     margin-bottom: 16px;
 }
 
+/* footer */
+
 footer {
+    margin: 0 auto;
+    min-width: 1200px;
+    max-width: 1600px;
     background: var(--footer-color);
     padding: 60px 0;
 }
@@ -326,10 +323,6 @@ footer p {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.contacts-footer li a:hover {
-    color: var(--brand-color)
-}
-
 .logo {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -351,17 +344,28 @@ address {
     display: inline-block;
 }
 
-.clients-list .clients-list-item svg {
+.clients-list-item {
     width: 170px;
     height: 92px;
-    border: 1px solid var(--svg-color);
-    border-radius: 4px;
-    padding: 16px 32px;
+    display: flex;
+    align-items: center;
 }
 
-.clients-list .clients-list-item svg:hover {
-    fill: var(--brand-color);
-    border-color: var(--brand-color);
+.clients-list-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--svg-color);
+    border-radius: 4px;
+    color: var(--svg-color);
+}
+
+.clients-list-icon {
+    fill: currentColor;
+    width: 106px;
+    height: 60px;
 }
 
 .clients-list {
@@ -377,12 +381,6 @@ address {
     font-family: 'Roboto', sans-serif;
     line-height: 1.16;
     text-align: center;
-}
-
-.clients-list-item:hover {
-    fill: var(--brand-color);
-    color: var(--brand-color);
-    cursor: pointer;
 }
 
 .social-footer {
@@ -406,6 +404,7 @@ address {
     line-height: 1.14;
     letter-spacing: 0.03em;
 }
+
 .subscribe {
     display: inline-block;
     margin-left: 70px;    
@@ -440,15 +439,6 @@ header {
     line-height: 1.625;
 }
 
-.portfolio-list li button:hover {
-    background: var(--brand-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    color: var(--white-color);
-    cursor: pointer;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .cards-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -461,6 +451,10 @@ header {
    border-left: 1px solid var(--border-cards-color);
    border-right: 1px solid var(--border-cards-color);
    border-bottom: 1px solid var(--border-cards-color);
+}
+
+.cards-link {
+    display: block;
 }
 
 .cards-wrapper li h2 {
@@ -478,14 +472,50 @@ header {
     line-height: 1.8;
 }
 
-.cards-wrapper li:hover {
+/* hovers, focuses */
+
+.cards-link:hover, .cards-link:focus {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.portfolio-list li button:hover {
+    background: var(--brand-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: var(--white-color);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
+.clients-list-item:hover, 
+.clients-list-item:focus {
+    fill: var(--brand-color);
+    color: var(--brand-color);
+}
 
+.clients-list-item a:hover {
+    border-color: var(--brand-color);
+    color: var(--brand-color);
+}
 
+.social a:hover, .social a:focus {
+    color: var(--white-color);
+    border-radius: 50%;
+    border: 1px solid var(--brand-color);
+    background-color: var(--brand-color);
+}
+
+.header-btn:hover {
+    cursor: pointer;
+}
+
+.contacts a:hover, 
+.contacts a:focus,
+.contacts-footer li a:hover,
+.contacts-footer li a:focus {
+    color: var(--brand-color); 
+}
 
 
 
