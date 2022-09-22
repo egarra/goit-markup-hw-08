@@ -494,12 +494,14 @@ header {
     color: var(--brand-color);
 }
 
-.clients-list-item a:hover {
+.clients-list-item a:hover, 
+.clients-list-item a:focus {
     border-color: var(--brand-color);
     color: var(--brand-color);
 }
 
-.social a:hover, .social a:focus {
+.social a:hover, 
+.social a:focus {
     color: var(--white-color);
     border-radius: 50%;
     border: 1px solid var(--brand-color);
