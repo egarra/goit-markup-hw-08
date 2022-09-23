@@ -56,6 +56,17 @@ ul {
     align-items: center;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+
 /* header */
 
 .main-menu-list {
@@ -218,6 +229,7 @@ ul {
 .pictures-list li img {
     width: 370px;
     height: 294px;
+
 }
 
 .team-cards li img {
@@ -257,6 +269,11 @@ ul {
     align-items: center;
     height: 44px;
     width: 44px;
+    border-radius: 50%;
+
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -360,6 +377,8 @@ address {
     border: 1px solid var(--svg-color);
     border-radius: 4px;
     color: var(--svg-color);
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-icon {
@@ -440,6 +459,7 @@ header {
 }
 
 .cards-wrapper {
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -454,7 +474,11 @@ header {
 }
 
 .cards-link {
-    display: block;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    position: relative;
 }
 
 .cards-wrapper li h2 {
@@ -474,6 +498,33 @@ header {
 
 /* hovers, focuses */
 
+.cards-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .cards-link::before {
+ 
+    width: 370px;
+height: 294px;
+transform: translateY(100%);
+    color: var(--white-color);
+    background-color: rgba(33, 150, 243, 0.9);
+    content: '';
+    position: absolute;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+.cards-link:hover .cards-overlay {
+    transform: translateY(0);
+}
+
 .cards-link:hover, .cards-link:focus {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -486,12 +537,6 @@ header {
     color: var(--white-color);
     cursor: pointer;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.clients-list-item:hover, 
-.clients-list-item:focus {
-    fill: var(--brand-color);
-    color: var(--brand-color);
 }
 
 .clients-list-item a:hover, 
@@ -518,6 +563,70 @@ header {
 .contacts-footer li a:focus {
     color: var(--brand-color); 
 }
+
+.overflow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    position: fixed;
+    width: 528px;
+    height: 581px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.close-btn {
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    left: 490px;
+    top: 8px;
+}
+
+.close-btn-svg {
+    width: 18px;
+    height: 18px;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+}
+
+.pictures-list-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    top: 1432px;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    text-transform: uppercase;   
+}
+
+
+
+
 
 
 

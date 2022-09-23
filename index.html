@@ -49,9 +49,19 @@
           </div>
         </section>
 
+        <section class="overflow">
+            <div class="modal">
+                <button class="close-btn">
+                    <svg class="close-btn-svg">
+                        <use href="./img/symbol-defs.svg#icon-close-black-18dp"></use>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
         <section class="features section">
             <div class="container">
-                <h2 content="features-section-content"></h2>
+                <h2 content="features-section-content visually-hidden"></h2>
                 <ul class="features-list">
                     <li>
                         <div>
@@ -103,9 +113,24 @@
             <div class="container">
                 <h2>Чим ми займаємося</h2>
                 <ul class="pictures-list">
-                    <li><img src="./img/box-1.jpg" width="370px" alt="box-1"></li>
-                    <li><img src="./img/box-2.jpg" width="370px" alt="box-2"></li>
-                    <li><img src="./img/box-3.jpg" width="370px" alt="box-3"></li>
+                    <li>
+                        <img src="./img/box-1.jpg" width="370px" alt="box-1">
+                        <div class="pictures-list-text">
+                            <p>Десктопні додатки</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/box-2.jpg" width="370px" alt="box-2">
+                        <div class="pictures-list-text">
+                            <p>Мобільні додатки</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/box-3.jpg" width="370px" alt="box-3">
+                        <div class="pictures-list-text">
+                            <p>Дизайнерські рішення</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -368,5 +393,6 @@
                 </div>
             </div>
     </footer>
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
