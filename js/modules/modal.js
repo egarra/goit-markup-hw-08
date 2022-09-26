@@ -6,10 +6,8 @@ const modal = (trigger, overflow, closeTrigger, icon) => {
           scroll = caclScroll();
 
 
-    overflowWindow.style.display = 'none';
-
     triggerBtn.addEventListener('click', () => {
-        overflowWindow.style.display = 'flex';
+        overflowWindow.style.display = "flex";
         document.body.style.overflow = "hidden";
         document.body.style.marginRight = `${scroll}px`;
     });
