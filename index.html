@@ -60,7 +60,7 @@
                 
                 <form>
                     
-                    <label for="user-name">Ім'я</label>
+                    <label class="modal-label" for="user-name">Ім'я</label>
                     <div class="modal-input-block">
                         <input class="input-user-info" type="text" name="user-name" id="user-name">
                         <svg class="modal-input-svg">
@@ -68,7 +68,7 @@
                         </svg>
                     </div>
                     
-                    <label for="user-phone">Телефон</label>
+                    <label class="modal-label" for="user-phone">Телефон</label>
                     <div class="modal-input-block">
                         <input class="input-user-info" type="tel" name="user-phone" id="user-phone">
                         <svg class="modal-input-svg">
@@ -76,7 +76,7 @@
                         </svg>
                     </div>
                     
-                    <label for="user-email">Пошта</label>
+                    <label class="modal-label" for="user-email">Пошта</label>
                     <div class="modal-input-block">
                         <input class="input-user-info" type="email" name="user-email" id="user-email">
                         <svg class="modal-input-svg">
@@ -84,15 +84,26 @@
                         </svg>
                     </div>
 
-                    <label for="user-comment">Коментар</label>
+                    <label class="modal-label" for="user-comment">Коментар</label>
                     <div class="modal-input-block">
-                        <input class="input-comment" type="text" name="user-comment" placeholder="Введіть текст" id="user-comment">
+                        <textarea class="input-comment" placeholder="Введіть текст" id="user-comment"></textarea> 
                     </div>
 
                     <div class="modal-checkbox-block">
-                        <input class="modal-input-checkbox" type="checkbox">
+                        <label class="modal-checkbox-label" for="user-checkbox">
+                            <input class="modal-input-checkbox" type="checkbox" id="user-checkbox">
+                            
+                            <svg class="modal-checkbox-svg">
+                                <use href="./img/symbol-defs.svg#icon-checkbox"></use>
+                            </svg>
+                            <svg class="modal-checked-svg">
+                                <use href="./img/symbol-defs.svg#icon-check"></use>
+                            </svg>
+                            Погоджуюся з розсилкою та приймаю <a class="modal-checkbox-link" href="">Умови договору</a>
+                        </label>
                     </div>
 
+                    <button class="modal-btn">Відправити</button>
                     
                 </form>
             </div>
@@ -423,6 +434,19 @@
                             </a>
                         </li>
                     </ul>
+                </div>
+
+                <div class="subscribe-form-block">
+                    <p>Підпишіться на розсилку</p>
+                    <label for="subscribe-email"><input class="subscribe-form-input" type="email" placeholder="E-mail" id="subscribe-email"></label>
+                    <div class="subscribe-btn-wrap">
+                        <button class="subscribe-form-btn">
+                            Підписатися
+                            <svg class="subscribe-btn-icon">
+                                <use href="./img/symbol-defs.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
     </footer>
