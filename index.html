@@ -16,9 +16,9 @@
             <nav class="row">
                 <a class="header-logo logo" href="">Web<span>Studio</span></a>
                 <ul class="main-menu-list">
-                    <li><a href="index.html" class="current">Студія</a></li>
-                    <li><a href="portfolio.html">Портфоліо</a></li>
-                    <li><a href="">Контакти</a></li>
+                    <li><a class="main-menu-link current" href="index.html">Студія</a></li>
+                    <li><a class="main-menu-link" href="portfolio.html">Портфоліо</a></li>
+                    <li><a class="main-menu-link" href="">Контакти</a></li>
                 </ul>
             </nav>
         
@@ -49,13 +49,52 @@
           </div>
         </section>
 
-        <section class="overflow">
+        <section class="overflow is-hidden">
             <div class="modal">
-                <button class="close-btn">
-                    <svg class="close-btn-svg">
+                <h3>Залиште свої дані, ми вам передзвонимо</h2>
+                <button class="modal-close-btn">
+                    <svg class="modal-close-svg">
                         <use href="./img/symbol-defs.svg#icon-close-black-18dp"></use>
                     </svg>
                 </button>
+                
+                <form>
+                    
+                    <label for="user-name">Ім'я</label>
+                    <div class="modal-input-block">
+                        <input class="input-user-info" type="text" name="user-name" id="user-name">
+                        <svg class="modal-input-svg">
+                            <use href="./img/symbol-defs.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                    
+                    <label for="user-phone">Телефон</label>
+                    <div class="modal-input-block">
+                        <input class="input-user-info" type="tel" name="user-phone" id="user-phone">
+                        <svg class="modal-input-svg">
+                            <use href="./img/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                    
+                    <label for="user-email">Пошта</label>
+                    <div class="modal-input-block">
+                        <input class="input-user-info" type="email" name="user-email" id="user-email">
+                        <svg class="modal-input-svg">
+                            <use href="./img/symbol-defs.svg#icon-email"></use>
+                        </svg>
+                    </div>
+
+                    <label for="user-comment">Коментар</label>
+                    <div class="modal-input-block">
+                        <input class="input-comment" type="text" name="user-comment" placeholder="Введіть текст" id="user-comment">
+                    </div>
+
+                    <div class="modal-checkbox-block">
+                        <input class="modal-input-checkbox" type="checkbox">
+                    </div>
+
+                    
+                </form>
             </div>
         </section>
 
@@ -113,23 +152,17 @@
             <div class="container">
                 <h2>Чим ми займаємося</h2>
                 <ul class="pictures-list">
-                    <li>
+                    <li class="pictures-list-item">
                         <img src="./img/box-1.jpg" width="370px" alt="box-1">
-                        <div class="pictures-list-text">
-                            <p>Десктопні додатки</p>
-                        </div>
+                        <p>Десктопні додатки</p>
                     </li>
-                    <li>
+                    <li class="pictures-list-item">
                         <img src="./img/box-2.jpg" width="370px" alt="box-2">
-                        <div class="pictures-list-text">
-                            <p>Мобільні додатки</p>
-                        </div>
+                        <p>Мобільні додатки</p>
                     </li>
-                    <li>
+                    <li class="pictures-list-item">
                         <img src="./img/box-3.jpg" width="370px" alt="box-3">
-                        <div class="pictures-list-text">
-                            <p>Дизайнерські рішення</p>
-                        </div>
+                        <p>Дизайнерські рішення</p>
                     </li>
                 </ul>
             </div>

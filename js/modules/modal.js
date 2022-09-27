@@ -1,32 +1,29 @@
-const modal = (trigger, overflow, closeTrigger, icon) => {
+const modal = (trigger, overflow, closeTrigger, icon, modalForm) => {
     const triggerBtn = document.querySelector(trigger),
           overflowWindow = document.querySelector(overflow),
           closeBtn = document.querySelector(closeTrigger),
           iconSvg = document.querySelector(icon),
-          scroll = caclScroll();
+          modalWindow = document.querySelector(modalForm);
+          /* scroll = caclScroll(); */
 
 
     triggerBtn.addEventListener('click', () => {
-        overflowWindow.style.display = "flex";
-        document.body.style.overflow = "hidden";
-        document.body.style.marginRight = `${scroll}px`;
+        overflowWindow.classList.toggle("is-hidden");
     });
 
     closeBtn.addEventListener('click', (e) => {
         if(e.target === closeBtn || e.target === iconSvg) {
-            overflowWindow.style.display = 'none';
-            document.body.style.overflow = "";
-            document.body.style.marginRight = `0px`;
+            overflowWindow.classList.toggle("is-hidden");
         }
     });
 
-    overflowWindow.addEventListener('click', () => {
-        overflowWindow.style.display = 'none';
-        document.body.style.overflow = "";
-        document.body.style.marginRight = `0px`;
+    overflowWindow.addEventListener('click', (e) => {
+        if (e.target === overflowWindow) {
+            overflowWindow.classList.toggle("is-hidden");
+        } 
     });
 
-    function caclScroll () {
+/*     function caclScroll () {
         let div = document.createElement('div');
 
         div.style.width = '50px';
@@ -39,7 +36,7 @@ const modal = (trigger, overflow, closeTrigger, icon) => {
         div.remove();
 
         return scrollWidth;
-    }
+    } */
 }
 
 export default modal;
