@@ -12,15 +12,21 @@ const modal = (trigger, overflow, closeTrigger, icon, modalForm) => {
     });
 
     closeBtn.addEventListener('click', (e) => {
-        if(e.target === closeBtn || e.target === iconSvg) {
+        if(e.target === closeBtn) {
             overflowWindow.classList.toggle("is-hidden");
-        }
+        } 
     });
 
     overflowWindow.addEventListener('click', (e) => {
         if (e.target === overflowWindow) {
             overflowWindow.classList.toggle("is-hidden");
         } 
+    });
+
+    iconSvg.addEventListener('click', (e) => {
+        if (e.target === iconSvg ) {
+            overflowWindow.classList.toggle("is-hidden");
+        }
     });
 
 /*     function caclScroll () {
