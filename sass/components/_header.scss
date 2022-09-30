@@ -1,0 +1,112 @@
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-logo__headline {
+    color: var(--black-color);
+}
+
+.logo {
+    font-family: var(--logo-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--brand-color)
+}
+
+.header__list {
+    margin-left: 93px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+
+    .header-list__link {
+        position: relative;
+        display: block;
+        font-weight: 500;
+        line-height: 1.14;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+    
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--timing-function);
+        &:hover,
+        &:focus {
+            color: var(--brand-color);
+        }
+        &:hover::after,
+        &:focus::after {
+            transform: scaleX(1);
+        }
+        &::after{
+            content: '';
+            left: 0;
+            top: 45px;
+            position: absolute;
+            background: #2196F3;
+            border-radius: 2px;
+            display: block;
+            height: 4px;
+            width: 100%;
+        
+            transform: scaleX(0);
+            transition: transform 250ms var(--timing-function);
+        }
+    }
+}
+
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+
+    .header-contacts__item {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        margin: 0 32px;
+    }
+
+    .header-contacts__icon {
+        margin-right: 10px;
+    }
+
+    .header-contacts__link {
+        color: var(--svg-color);
+        display: flex;
+        align-items: center;
+        color: var(--grey-color);
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--timing-function);
+        &:hover,
+        &:focus {
+            color: var(--brand-color);
+        }
+    }
+
+    .icon-envelope {
+        fill: currentColor;
+        width: 16px; 
+        height: 12px;
+    }
+    
+    .icon-phone {
+        fill: currentColor;
+        width: 10px;
+        height: 16px;
+    }
+}
+
+
+
+
+
+

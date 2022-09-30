@@ -1,0 +1,36 @@
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    color: var(--black-color);
+    
+    .features-list__item {
+        width: 270px;
+    }
+    
+    .features-list__block {
+        background-color: var(--snow-color);
+        width: 270px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .features-list__title {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    
+    .features-list__text {
+        margin-top: 10px;
+        font-weight: 400;
+        color: var(--grey-color);;
+        line-height: 1.7;
+    }
+    
+    .features-list__icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+

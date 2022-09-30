@@ -1,0 +1,49 @@
+.clients__title {
+    color: var(--black-color);
+    font-size: 36px;
+    font-weight: 700;
+    font-family: var(--main-font);
+    line-height: 1.16;
+    text-align: center;
+}
+
+.clients-list {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+
+    .clients-list__item {
+        width: 170px;
+        height: 92px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .clients-list__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        border: 1px solid var(--svg-color);
+        border-radius: 4px;
+        color: var(--svg-color);
+    
+        transition-property: border, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover, 
+        &:focus {
+            border-color: var(--brand-color);
+            color: var(--brand-color);
+        }
+    }
+    
+    .clients-list__icon {
+        fill: currentColor;
+        width: 106px;
+        height: 60px;
+    }
+}
+
