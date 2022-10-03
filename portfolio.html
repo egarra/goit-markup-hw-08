@@ -12,9 +12,34 @@
 </head>
 <body>
     <header class="header">
+
+        <div class="header-mobile is-hidden">
+            <svg class="header-mobile__icon-close">
+                <use href="./img/symbol-defs.svg#icon-close-mobile"></use>
+            </svg>
+            <ul class="header-mobile__list">
+                <li class="header-mobile__list-item"><a class="header-mobile__list-link" href="index.html">Студія</a></li>
+                <li class="header-mobile__list-item"><a class="header-mobile__list-link current-mobile" href="portfolio.html">Портфоліо</a></li>
+                <li class="header-mobile__list-item"><a class="header-mobile__list-link">Контакти</a></li>
+            </ul>
+            <ul class="header-mobile__contacts">
+                <li class="header-mobile__contacts-item"><a class="header-mobile__contacts-link" href="">+38 096 111 11 11</a></li>
+                <li class="header-mobile__contacts-item"><a class="header-mobile__contacts-link" href="">info@devstudio.com</a></li>
+            </ul>
+            <ul class="header-mobile__social">
+                <li class="header-mobile__social-item"><a class="header-mobile__social-link" href="">Instagram</a></li>
+                <li class="header-mobile__social-item"><a class="header-mobile__social-link" href="">Twitter</a></li>
+                <li class="header-mobile__social-item"><a class="header-mobile__social-link" href="">Facebook</a></li>
+                <li class="header-mobile__social-item"><a class="header-mobile__social-link" href="">LinkedIn</a></li>
+            </ul>
+        </div>
+
         <div class="container row">
             <nav class="row">
                 <a class="header-logo logo" href="">Web<span class="header-logo__headline">Studio</span></a>
+                <svg class="header-mobile__icon">
+                    <use href="./img/symbol-defs.svg#icon-menu-mobile"></use>
+                </svg>
                 <ul class="header__list">
                     <li><a class="header-list__link" href="index.html">Студія</a></li>
                     <li><a class="header-list__link current" href="portfolio.html">Портфоліо</a></li>
@@ -40,6 +65,7 @@
         </div>
     </header>
 
+
     <main>
         <section class="section portfolio-section">
             <div class="container">
@@ -53,10 +79,10 @@
                 </ul>
     
                 <ul class="portfolio-cards__list">
-                    <li>
+                    <li class="portfolio-cards__item">
                         <a href="" class="portfolio-cards__link">
                             <div class="portfolio-item__wrap">
-                                <img src="./img/porfolio_1.jpg" class="cards-picture" width="width: 370px" alt="Проєкт Prime">
+                                <img src="./img/porfolio_1.jpg" srcset="./img/porfolio_1_2x.jpg 2x" class="cards-picture"  width="width: 370px" alt="Проєкт Prime">
                                 <div class="portfolio-cards__overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -68,10 +94,10 @@
                         </a>
                     </li>
         
-                    <li>
+                    <li class="portfolio-cards__item">
                         <a href="" class="portfolio-cards__link">
                             <div class="portfolio-item__wrap">
-                                <img src="./img/porfolio_2.jpg" class="cards-picture" width="width: 370px" alt="Проєкт Prime">
+                                <img src="./img/porfolio_2.jpg" srcset="./img/porfolio_2_2x.jpg 2x" class="cards-picture" width="width: 370px" alt="Проєкт Prime">
                                 <div class="portfolio-cards__overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -83,10 +109,10 @@
                         </a>
                     </li>
         
-                    <li>
+                    <li class="portfolio-cards__item">
                         <a href="" class="portfolio-cards__link">
                             <div class="portfolio-item__wrap">
-                                <img src="./img/porfolio_3.jpg" width="width: 370px" alt="Ресторан Seafood">
+                                <img src="./img/porfolio_3.jpg" srcset="./img/porfolio_3_2x.jpg 2x" width="width: 370px" alt="Ресторан Seafood">
                                 <div class="portfolio-cards__overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -98,10 +124,10 @@
                         </a>
                     </li>
         
-                    <li>
+                    <li class="portfolio-cards__item">
                         <a href="" class="portfolio-cards__link">
                             <div class="portfolio-item__wrap">
-                                <img src="./img/porfolio_4.jpg" width="width: 370px" alt="Проєкт Prime">
+                                <img src="./img/porfolio_4.jpg" srcset="./img/porfolio_4_2x.jpg 2x" width="width: 370px" alt="Проєкт Prime">
                                 <div class="portfolio-cards__overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -113,10 +139,10 @@
                         </a>
                     </li>
         
-                    <li>
+                    <li class="portfolio-cards__item">
                         <a href="" class="portfolio-cards__link">
                             <div class="portfolio-item__wrap">
-                                <img src="./img/porfolio_5.jpg" width="width: 370px" alt="Проєкт Boxes">
+                                <img src="./img/porfolio_5.jpg" srcset="./img/porfolio_5_2x.jpg 2x" width="width: 370px" alt="Проєкт Boxes">
                                 <div class="portfolio-cards__overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -128,10 +154,10 @@
                         </a>
                     </li>
         
-                    <li>
+                    <li class="portfolio-cards__item">
                         <a href="" class="portfolio-cards__link">
                             <div class="portfolio-item__wrap">
-                                <img src="./img/porfolio_6.jpg" width="width: 370px" alt="Inspiration has no Borders">
+                                <img src="./img/porfolio_6.jpg" srcset="./img/porfolio_6_2x.jpg 2x" width="width: 370px" alt="Inspiration has no Borders">
                                 <div class="portfolio-cards__overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -143,10 +169,10 @@
                         </a>
                     </li>
         
-                    <li>
+                    <li class="portfolio-cards__item">
                         <a href="" class="portfolio-cards__link">
                             <div class="portfolio-item__wrap">
-                                <img src="./img/porfolio_7.jpg" width="width: 370px" alt="Видання Limited Edition">
+                                <img src="./img/porfolio_7.jpg" srcset="./img/porfolio_7_2x.jpg 2x" width="width: 370px" alt="Видання Limited Edition">
                                 <div class="portfolio-cards__overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -158,10 +184,10 @@
                         </a>
                     </li>
         
-                    <li>
+                    <li class="portfolio-cards__item">
                         <a href="" class="portfolio-cards__link">
                             <div class="portfolio-item__wrap">
-                                <img src="./img/porfolio_8.jpg" width="width: 370px" alt="Проєкт LAB">
+                                <img src="./img/porfolio_8.jpg" srcset="./img/porfolio_8_2x.jpg 2x" width="width: 370px" alt="Проєкт LAB">
                                 <div class="portfolio-cards__overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -173,10 +199,10 @@
                         </a>
                     </li>
         
-                    <li>
+                    <li class="portfolio-cards__item">
                         <a href="" class="portfolio-cards__link">
                             <div class="portfolio-item__wrap">
-                                <img src="./img/porfolio_9.jpg" width="width: 370px" alt="Growing Business">
+                                <img src="./img/porfolio_9.jpg" srcset="./img/porfolio_9_2x.jpg 2x" width="width: 370px" alt="Growing Business">
                                 <div class="portfolio-cards__overlay">
                                     <p class="portfolio-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -263,5 +289,6 @@
             </div>
         </div>
     </footer>
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>

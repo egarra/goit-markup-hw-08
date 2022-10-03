@@ -20,3 +20,10 @@
     --main-font: 'Roboto', sans-serif;
     --logo-font: 'Raleway', sans-serif;
 }
+
+:root {
+    --min-mobile-size: min-width: 320px;
+    --max-mobile-size: max-width: 767px;
+    --min-tablet-size: min-width: 768px;
+    --max-tablet-size: max-width: 1599px;
+}

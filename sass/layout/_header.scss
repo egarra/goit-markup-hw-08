@@ -1,6 +1,25 @@
 
 .header {
     border-bottom: 1px solid #ECECEC;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        position: relative;
+    }
+}
+
+.header-mobile__icon {
+    display: none;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 24px;
+        height: 16px;
+        display: inline-block;
+        margin-left: auto;
+        &:hover,
+        &:focus {
+            fill: var(--brand-color);
+        }
+    }
 }
 
 .header-logo__headline {
@@ -13,7 +32,12 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var(--brand-color)
+    color: var(--brand-color);
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        padding: 16px 0;
+        font-size: 24px;
+    }
 }
 
 .header__list {
@@ -22,6 +46,12 @@
     justify-content: center;
     gap: 50px;
     list-style: none;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        display: none;
+        opacity: 0;
+        pointer-events: none;
+    }
 
     .header-list__link {
         position: relative;
@@ -62,12 +92,26 @@
 .header-contacts {
     display: flex;
     margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-direction: column;
+        gap: 10px;
+        padding: 21px 0;
+    }
 
     .header-contacts__item {
-        padding-top: 32px;
-        padding-bottom: 32px;
         display: flex;
         margin: 0 32px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-direction: column;
     }
 
     .header-contacts__icon {

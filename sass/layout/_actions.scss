@@ -1,6 +1,10 @@
 .actions {
     padding-top: 0;
 
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+        display: none;
+    }
+
     .actions__title {
         font-style: normal;
         font-size: 36px;

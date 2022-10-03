@@ -12,11 +12,30 @@
     margin-top: 50px;
     gap: 30px;
 
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        flex-wrap: wrap;
+        gap: calc(30px - 10%);
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
     .clients-list__item {
         width: 170px;
         height: 92px;
         display: flex;
         align-items: center;
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            width: 46%;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: calc((100% - 3 * 30px) / 3);
+        }
     }
     
     .clients-list__link {

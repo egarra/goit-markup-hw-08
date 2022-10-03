@@ -13,9 +13,34 @@
 </head>
 <body>
     <header class="header">
+
+        <div class="header-mobile is-hidden">
+            <svg class="header-mobile__icon-close">
+                <use href="./img/symbol-defs.svg#icon-close-mobile"></use>
+            </svg>
+            <ul class="header-mobile__list">
+                <li class="header-mobile__list-item"><a class="header-mobile__list-link current-mobile" href="index.html">Студія</a></li>
+                <li class="header-mobile__list-item"><a class="header-mobile__list-link" href="portfolio.html">Портфоліо</a></li>
+                <li class="header-mobile__list-item"><a class="header-mobile__list-link">Контакти</a></li>
+            </ul>
+            <ul class="header-mobile__contacts">
+                <li class="header-mobile__contacts-item"><a class="header-mobile__contacts-link" href="">+38 096 111 11 11</a></li>
+                <li class="header-mobile__contacts-item"><a class="header-mobile__contacts-link" href="">info@devstudio.com</a></li>
+            </ul>
+            <ul class="header-mobile__social">
+                <li class="header-mobile__social-item"><a class="header-mobile__social-link" href="">Instagram</a></li>
+                <li class="header-mobile__social-item"><a class="header-mobile__social-link" href="">Twitter</a></li>
+                <li class="header-mobile__social-item"><a class="header-mobile__social-link" href="">Facebook</a></li>
+                <li class="header-mobile__social-item"><a class="header-mobile__social-link" href="">LinkedIn</a></li>
+            </ul>
+        </div>
+
         <div class="container row">
             <nav class="row">
                 <a class="header-logo logo" href="">Web<span class="header-logo__headline">Studio</span></a>
+                <svg class="header-mobile__icon">
+                    <use href="./img/symbol-defs.svg#icon-menu-mobile"></use>
+                </svg>
                 <ul class="header__list">
                     <li><a class="header-list__link current" href="index.html">Студія</a></li>
                     <li><a class="header-list__link" href="portfolio.html">Портфоліо</a></li>
@@ -186,7 +211,7 @@
                         <h2 class="team__title">Наша команда</h2>
                         <ul class="team-list">
                            <li class="team-list__item">
-                                <img class="team-list__img"  src="./img/img-ihor.jpg" width="width: 270px" alt="Product Designer">
+                                <img class="team-list__img" srcset="./img/Ihor_2x.jpg 2x" src="./img/img-ihor.jpg" width="width: 270px" alt="Product Designer">
                                 <div class="team-list__block">
                                     <h3 class="team-list__title">Ігор Дем'яненко</h3>
                                     <p class="team-list__text">Product Designer</p>
@@ -223,7 +248,7 @@
                                 </div>
                             </li>
                             <li class="team-list__item">
-                                <img class="team-list__img" src="./img/img-olha.jpg" width="width: 270px" alt="Frontend Developer">
+                                <img class="team-list__img" srcset="./img/Maryna_2x.jpg 2x" src="./img/img-olha.jpg" width="width: 270px" alt="Frontend Developer">
                                 <div class="team-list__block">
                                     <h3 class="team-list__title">Ольга Рєпіна</h3>
                                     <p class="team-list__text">Frontend Developer</p>
@@ -260,7 +285,7 @@
                                 </div>
                             </li>
                             <li class="team-list__item">
-                                <img class="team-list__img" src="./img/img-mykola.jpg" width="width: 270px" alt="Marketing">
+                                <img class="team-list__img" srcset="./img/Mykola_2x.jpg 2x" src="./img/img-mykola.jpg" width="width: 270px" alt="Marketing">
                                 <div class="team-list__block">
                                     <h3 class="team-list__title">Микола Тарасов</h3>
                                     <p class="team-list__text">Marketing</p>
@@ -297,7 +322,7 @@
                                 </div>
                             </li>
                             <li class="team-list__item">
-                                <img class="team-list__img" src="./img/img-michael.jpg" width="width: 270px" alt="UI Designer">
+                                <img class="team-list__img" srcset="./img/Michael_2x.jpg 2x" src="./img/img-michael.jpg" width="width: 270px" alt="UI Designer">
                                 <div class="team-list__block">
                                     <h3 class="team-list__title">Михайло Єрмаков</h3>
                                     <p class="team-list__text">UI Designer</p>

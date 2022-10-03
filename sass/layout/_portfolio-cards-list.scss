@@ -5,6 +5,14 @@
     gap: 30px;
     margin-top: 50px;
 
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        justify-content: center;
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        justify-content: center;
+    }
+
     .portfolio-cards__link {
         display: inline-block;
     
@@ -26,8 +34,6 @@
     .portfolio-item__wrap {
         overflow: hidden;
         position: relative;
-        width: 370px;
-        height: 294px;
     }
 
     .portfolio-cards__overlay {
