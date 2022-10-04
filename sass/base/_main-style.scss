@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -29,12 +29,8 @@ ul {
 .section {
     padding: 94px 0;
 
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-        padding: 60px 0;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        padding: 60px 0;
+    @media screen and (max-width: 1199px) {
+        padding: 60px 15px;
     }
 }
 
@@ -50,6 +46,8 @@ ul {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         padding: 0 15px;
         width: 100%;
+        max-width: 738px;
+        padding: 0;
     }
 }
 

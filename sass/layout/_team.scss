@@ -9,7 +9,7 @@
         text-align: center;
         color: var(--black-color);
 
-        @media screen and (min-width: 0px) and (max-width: 767px) {
+        @media screen and (max-width: 1199) {
             font-size: 28px;
             line-height: 1.17;
         }
@@ -40,6 +40,12 @@
     
     .team-list__block {
         padding: 30px 0;
+    }
+
+    .team-list__img {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            max-width: 354px;
+        }
     }
     
     .team-list__title {

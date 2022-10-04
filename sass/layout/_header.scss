@@ -5,6 +5,11 @@
     @media screen and (min-width: 320px) and (max-width: 767px) {
         position: relative;
     }
+
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
 }
 
 .header-mobile__icon {
