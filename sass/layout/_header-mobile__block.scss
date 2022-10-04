@@ -1,11 +1,13 @@
 .header-mobile {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    height: 100%;
     width: 100%;
-    max-height: 796px;
     padding: 48px 40px;
     background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
 
     overflow: hidden;
 
@@ -42,7 +44,7 @@
 }
 
 .header-mobile__contacts {
-    margin-top: 302px;
+    margin-top: auto;
 }
 
 .header-mobile__contacts-item {

@@ -16,7 +16,7 @@ const modalMobile = (trigger, overflow, closeTrigger) => {
             overflowWindow.classList.toggle("is-hidden");
           /*   document.body.style.overflow = ""; */
             document.querySelector('.portfolio-cards__list').style.display = 'flex';
-            document.querySelector('.subscribe-footer__form').style.display = 'block';
+            document.querySelector('.subscribe-footer__form').style.display = 'flex';
         } 
     });
 
@@ -31,7 +31,7 @@ const modalMobile = (trigger, overflow, closeTrigger) => {
         overflowWindow.classList.add('is-hidden');
         document.body.style.overflow = "";
         document.querySelector('.portfolio-cards__list').style.display = 'flex';
-        document.querySelector('.subscribe-footer__form').style.display = 'block';
+        document.querySelector('.subscribe-footer__form').style.display = 'flex';
       });
 }
 

@@ -1,13 +1,16 @@
-.subscribe-form__block {
+.subscribe-footer__block {
     
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-top: 60px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: calc((100% - 2 * 150px) / 1);
     }
     
 
-    .subscribe-form__text {
+    .subscribe-footer__text {
         font-weight: 700;
         text-transform: uppercase;
         line-height: 1.14;
@@ -18,7 +21,7 @@
         margin-top: 20px;
 
         @media screen and (min-width: 320px) and (max-width: 767px) {
-            display: block;
+            flex-direction: column;
         }
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -27,8 +30,12 @@
             gap: 20px;
         }
     }
+
+    .subscribe-footer__label {
+        width: 100%;
+    }
     
-    .subscribe-form__input {
+    .subscribe-footer__input {
         width: 358px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -39,12 +46,12 @@
         padding-left: 16px;
         color: rgba(255, 255, 255, 0.3);
 
-        @media screen and (max-width: 480px) and (max-width: 767px) {
+        @media screen and (min-width: 0px) and (max-width: 767px) {
             width: 100%;
         }
     }
     
-    .subscribe-form__btn {
+    .subscribe-footer__btn {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -59,15 +66,20 @@
         border-radius: 4px;
         color: var(--white-color);
         cursor: pointer;
+        padding: 0 28px;
 
         @media screen and (min-width: 320px) and (max-width: 767px) {
             margin: 0 auto;
             margin-top: 20px;
         }
 
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 200px;
+        }
+
     }
     
-    .subscribe-btn__icon {
+    .subscribe-footer__icon {
         width: 24px;
         height: 24px;
         fill: var(--white-color);
