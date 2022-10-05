@@ -6,7 +6,6 @@ const modalMobile = (trigger, overflow, closeTrigger) => {
 
     triggerBtn.addEventListener('click', () => {
         overflowWindow.classList.toggle("is-hidden");
-       /*  document.body.style.overflow = "hidden"; */
         document.querySelector('.portfolio-cards__list').style.display = 'none';
         document.querySelector('.subscribe-footer__form').style.display = 'none';
     });
@@ -14,17 +13,10 @@ const modalMobile = (trigger, overflow, closeTrigger) => {
     closeBtn.addEventListener('click', (e) => {
         if(e.target === closeBtn) {
             overflowWindow.classList.toggle("is-hidden");
-          /*   document.body.style.overflow = ""; */
             document.querySelector('.portfolio-cards__list').style.display = 'flex';
             document.querySelector('.subscribe-footer__form').style.display = 'flex';
         } 
     });
-
-   /*  overflowWindow.addEventListener('click', (e) => {
-        if (e.target === overflowWindow) {
-            overflowWindow.classList.toggle("is-hidden");
-        } 
-    }); */
 
     window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
         if (!e.matches) return;
